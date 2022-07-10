@@ -1,0 +1,35 @@
+$debug = True
+
+$$$
+def test(a, b):
+	ui = True
+	return a*b
+
+info = "alos ui mais non"
+dico = {"ui": 3, "jean": 5}
+$$$
+
+$$ ui/menu.thi
+
+The list is : [\
+$if debug == True:
+	$for i in range(len(lst)):
+		$if i != len(lst) - 1:
+			{lst[i]}, \
+		$else:
+			{lst[i]}\
+		$endif
+	$endfor
+$endif
+]
+	
+Salut tt le monde
+
+$$ ui/menu.thi
+
+{a}
+{b}
+{c}
+{test(a, b)}
+{l}
+{lst}
