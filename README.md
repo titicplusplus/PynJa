@@ -108,7 +108,7 @@ Current time = 11:45:33
 It's really easy to use PynJa.
 Here is an example:
 
-```
+```cpp
 #include <iostream>
 #include <nlohmann/json.hpp>
 #include <fstream>
