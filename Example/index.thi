@@ -1,35 +1,32 @@
-$debug = True
-
 $$$
+debug = True
+a = 0
+
 def test(a, b):
-	ui = True
 	return a*b
 
-info = "alos ui mais non"
-dico = {"ui": 3, "jean": 5}
+if debug:
+	a = 3
 $$$
-
 $$ ui/menu.thi
 
-The list is : [\
+The list is : \
 $if debug == True:
 	$for i in range(len(lst)):
 		$if i != len(lst) - 1:
-			{lst[i]}, \
+			{lst[i]} - \
 		$else:
 			{lst[i]}\
 		$endif
 	$endfor
-$endif
-]
+$endif #Very important
 	
-Salut tt le monde
+You can do anything
 
 $$ ui/menu.thi
 
-{a}
-{b}
-{c}
-{test(a, b)}
-{l}
-{lst}
+Test(a, 2) => {test(a, 2)}
+An example of dict : {ex_dict}
+
+$from datetime import datetime #You can import module
+Current time = {datetime.now().strftime('%H:%M:%S')}
